@@ -1,0 +1,88 @@
+* {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(yellow, white);
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 106vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: grey;
+  opacity: 0.6;
+  /* display: none; */
+}
+
+h1 {
+  text-align: center;
+  margin: 1em 0 1em 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 1em 0 1em 0;
+}
+
+.gamearea {
+  display: flex;
+  justify-content: center;
+  margin: 5em;
+}
+
+.light {
+  width: 7em;
+  height: 7em;
+  background-color: green;
+  margin: 1em;
+  border-radius: 50%;
+}
+
+.light:active {
+  /* width: 6.8em;
+  height: 6.8em; */
+  box-shadow: inset 0px 0px 10px #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 0 3em 0 0;
+}
+
+#end {
+  /* display: none; */
+  height: 15em;
+  width: 35em;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 10em;
+  left: 25em;
+  z-index: 100;
+  box-shadow: 3px 3px 5px grey;
+}
+
+#close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+#gameresult {
+  margin-top: 5em;
+}
+
+p {
+  text-align: center;
+}
