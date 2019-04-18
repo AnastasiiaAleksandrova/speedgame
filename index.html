@@ -19,16 +19,18 @@
   </div>
   <div class="buttons">
     <button onclick="onStartGameCallBack()">Start game</button>
-    <button onclick="onStopGameCallBack()">Stop game</button>
+    <button id="stop_button">Stop game</button>
   </div>
 
   <div id="end">
     <div id="close">Close</div>
     <div id="gameresult">
       <p>Ups, game over!</p>
-      <p>Your final score is 10</p>
+      <p id="final_score">Your final score is 10</p>
     </div>
   </div>
+
+  <div id="cover"></div>
 
   <script>
 
