@@ -32,9 +32,10 @@ class Game {
           this.score++;
           this._increaseSpeed();
           document.getElementById("score").innerHTML = `Your score is ${this.score}`
-        } else {
-          this.stopGame();
-        }
+        } 
+        // else {
+        //   this.stopGame();
+        // }
       })
     }
   }
